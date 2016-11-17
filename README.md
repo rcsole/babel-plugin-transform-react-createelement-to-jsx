@@ -1,16 +1,16 @@
-# babel-plugin-transform-react-createelement-to-jsx [![build status]][travis] [![npm version]][npm]
+# babel-plugin-transform-react-h-to-jsx [![build status]][travis] [![npm version]][npm]
 
-[build status]: https://travis-ci.org/flying-sheep/babel-plugin-transform-react-createelement-to-jsx.svg?branch=master
-[travis]: https://travis-ci.org/flying-sheep/babel-plugin-transform-react-createelement-to-jsx
-[npm version]: https://img.shields.io/npm/v/babel-plugin-transform-react-createelement-to-jsx.svg
-[npm]: https://www.npmjs.com/package/babel-plugin-transform-react-createelement-to-jsx
+[build status]: https://travis-ci.org/flying-sheep/babel-plugin-transform-react-h-to-jsx.svg?branch=master
+[travis]: https://travis-ci.org/flying-sheep/babel-plugin-transform-react-h-to-jsx
+[npm version]: https://img.shields.io/npm/v/babel-plugin-transform-react-h-to-jsx.svg
+[npm]: https://www.npmjs.com/package/babel-plugin-transform-react-h-to-jsx
 
-Turn `React.createElement` calls back into JSX syntax.
+Turn `Preact.h` calls back into JSX syntax.
 
 This is useful for
 
 1. Converting projects that started out in the opinion that “we need no stinking compilers”
-2. Converting already-compiled JS into something maintainable (E.g. [CJSX] syntax → [coffee-react-transform] → [decaffeinate] → **react-createelement-to-jsx** → [JSX] syntax)
+2. Converting already-compiled JS into something maintainable (E.g. [CJSX] syntax → [coffee-react-transform] → [decaffeinate] → **react-h-to-jsx** → [JSX] syntax)
 
 [CJSX]: https://github.com/jsdf/coffee-react#readme
 [coffee-react-transform]: https://github.com/jsdf/coffee-react-transform
@@ -20,7 +20,7 @@ This is useful for
 ## Installation
 
 ```sh
-$ npm install babel-plugin-transform-react-createelement-to-jsx
+$ npm install babel-plugin-transform-react-h-to-jsx
 ```
 
 ## Usage
@@ -31,14 +31,14 @@ $ npm install babel-plugin-transform-react-createelement-to-jsx
 
 ```json
 {
-  "plugins": [ "transform-react-createelement-to-jsx" ]
+  "plugins": [ "transform-react-h-to-jsx" ]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel --plugins transform-react-createelement-to-jsx script.js
+$ babel --plugins transform-react-h-to-jsx script.js
 ```
 
 ### Via Node API
@@ -47,7 +47,7 @@ $ babel --plugins transform-react-createelement-to-jsx script.js
 import babel from 'babel-core'
 
 babel.transform('code', {
-  plugins: ['transform-react-createelement-to-jsx'],
+  plugins: ['transform-react-h-to-jsx'],
 })
 ```
 

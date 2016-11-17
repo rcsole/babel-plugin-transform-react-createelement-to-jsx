@@ -1,22 +1,14 @@
 {
-  "name": "babel-plugin-transform-react-createelement-to-jsx",
+  "name": "babel-plugin-transform-preact-h-to-jsx",
   "version": "1.0.0",
-  "description": "Transforms React.createElement calls to JSX syntax",
-  "author": "Philipp A.",
+  "description": "Transforms Preact.h calls to JSX syntax",
+  "author": "Ricard Solé <ricardsolecasas@gmail.com>",
   "license": "GPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/flying-sheep/babel-plugin-transform-react-createelement-to-jsx.git"
-  },
   "keywords": [
     "babel-plugin",
-    "react",
+    "preact",
     "jsx"
   ],
-  "bugs": {
-    "url": "https://github.com/flying-sheep/babel-plugin-transform-react-createelement-to-jsx/issues"
-  },
-  "homepage": "https://github.com/flying-sheep/babel-plugin-transform-react-createelement-to-jsx#readme",
   "main": "lib/index.js",
   "jsnext:main": "mod/index.js",
   "files": [
@@ -46,5 +38,16 @@
   },
   "engines": {
     "node": ">=0.12"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcsole/babel-plugin-transform-preact-h-to-jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rcsole/babel-plugin-transform-preact-h-to-jsx/issues"
+  },
+  "homepage": "https://github.com/rcsole/babel-plugin-transform-preact-h-to-jsx#readme"
 }
